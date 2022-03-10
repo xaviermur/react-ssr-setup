@@ -3,6 +3,7 @@ const routes = {
     home: '/',
     page1: '/page-1',
     page2: '/page-2',
+    report: '/report',
 };
 
 export const getRoute = (

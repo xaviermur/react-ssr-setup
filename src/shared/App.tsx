@@ -8,6 +8,7 @@ import { ReactComponent as ReactLogo } from './assets/react.svg';
 import Home from './pages/Home';
 import Page1 from './pages/Page-1';
 import Page2 from './pages/Page-2';
+import Report from './pages/Report';
 import routes from './routes';
 import css from './App.module.css';
 
@@ -34,6 +35,7 @@ const App: React.FC<any> = () => {
                 <Route exact path={routes.home} component={Home} />
                 <Route exact path={routes.page1} component={Page1} />
                 <Route exact path={routes.page2} component={Page2} />
+                <Route exact path={routes.report} component={Report} />
                 <Route render={() => '404!'} />
             </Switch>
             <h2>{t('router-headline')}</h2>
@@ -46,6 +48,9 @@ const App: React.FC<any> = () => {
                 </li>
                 <li>
                     <Link to="/page-2">{t('nav.page-2')}</Link>
+                </li>
+                <li>
+                    <Link to="/report">{t('nav.report')}</Link>
                 </li>
             </ul>
         </div>

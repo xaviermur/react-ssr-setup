@@ -17,16 +17,18 @@ const App: React.FC<any> = () => {
 
     return (
         <React.Fragment>
-            <Features />
-            <h2>{t('i18n-example')}</h2>
-            <p>
-                <button value="de_DE" onClick={handleLocaleChange}>
-                    Deutsch
-                </button>
-                <button value="en_US" onClick={handleLocaleChange}>
-                    English
-                </button>
-            </p>
+            {false && <Features />}
+            {false && <h2>{t('i18n-example')}</h2>}
+            {false && (
+                <p>
+                    <button value="de_DE" onClick={handleLocaleChange}>
+                        Deutsch
+                    </button>
+                    <button value="en_US" onClick={handleLocaleChange}>
+                        English
+                    </button>
+                </p>
+            )}
         </React.Fragment>
     );
 };
