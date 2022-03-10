@@ -1,0 +1,5 @@
+h1.default {
+  font-weight: bold;
+  font-size: var(--font-size-h1);
+  margin: var(--item-header-margin);
+}

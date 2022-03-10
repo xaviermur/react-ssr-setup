@@ -1,0 +1,12 @@
+textarea.default {
+  display: block;
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: yellow;
+  margin: var(--item-input-margin);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
